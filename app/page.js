@@ -11,7 +11,7 @@ export default function Home() {
     setIsClient(true);
     setTimeout(() => {
       setLevels(Playref?.current?.getInternalPlayer("hls").levels);
-    }, 1000);
+    }, 2000);
   }, []);
   const changeBitrate = (event) => {
     const internalPlayer = Playref?.current?.getInternalPlayer("hls");
